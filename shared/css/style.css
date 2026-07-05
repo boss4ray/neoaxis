@@ -108,7 +108,7 @@ a {
     border: 1px solid var(--line);
     background:
         linear-gradient(90deg, rgba(16, 20, 18, 0.94), rgba(16, 20, 18, 0.42)),
-        url("/shared/images/main.jpg?v=20260706") center/cover;
+        url("/shared/images/main.jpg?v=2026070602") center/cover;
 }
 
 .hero--compact {
@@ -355,7 +355,7 @@ img.gallery-image {
     margin: 0;
 }
 
-@media (max-width: 780px) {
+@media (max-width: 900px) {
     :root {
         --page-gutter: 24px;
     }
@@ -385,7 +385,7 @@ img.gallery-image {
         padding: 32px 22px;
         background:
             linear-gradient(0deg, rgba(16, 20, 18, 0.88), rgba(16, 20, 18, 0.38)),
-            url("/shared/images/main-phone.jpg?v=20260706") center/cover;
+            url("/shared/images/main-phone.jpg?v=2026070602") center/cover;
     }
 
     h1 {
@@ -453,7 +453,7 @@ img.gallery-image {
         padding: 26px 18px;
         background:
             linear-gradient(0deg, rgba(16, 20, 18, 0.96), rgba(16, 20, 18, 0.48)),
-            url("/shared/images/main-phone.jpg?v=20260706") center/cover;
+            url("/shared/images/main-phone.jpg?v=2026070602") center/cover;
     }
 
     .hero--compact {
