@@ -383,7 +383,9 @@ img.gallery-image {
     .hero {
         min-height: 360px;
         padding: 32px 22px;
-        background-position: 62% center;
+        background:
+            linear-gradient(0deg, rgba(16, 20, 18, 0.88), rgba(16, 20, 18, 0.38)),
+            url("/shared/images/main-phone.jpg?v=20260706") center/cover;
     }
 
     h1 {
@@ -451,7 +453,7 @@ img.gallery-image {
         padding: 26px 18px;
         background:
             linear-gradient(0deg, rgba(16, 20, 18, 0.96), rgba(16, 20, 18, 0.48)),
-            url("/shared/images/main.jpg?v=20260706") 66% center/cover;
+            url("/shared/images/main-phone.jpg?v=20260706") center/cover;
     }
 
     .hero--compact {
