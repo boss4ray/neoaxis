@@ -108,7 +108,7 @@ a {
     border: 1px solid var(--line);
     background:
         linear-gradient(90deg, rgba(16, 20, 18, 0.94), rgba(16, 20, 18, 0.42)),
-        url("/shared/images/main.jpg") center/cover;
+        url("/shared/images/main.jpg?v=20260706") center/cover;
 }
 
 .hero--compact {
@@ -428,7 +428,7 @@ p {
         padding: 26px 18px;
         background:
             linear-gradient(0deg, rgba(16, 20, 18, 0.96), rgba(16, 20, 18, 0.48)),
-            url("/shared/images/main.jpg") 66% center/cover;
+            url("/shared/images/main.jpg?v=20260706") 66% center/cover;
     }
 
     .hero--compact {
