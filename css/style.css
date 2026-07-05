@@ -1,0 +1,497 @@
+:root {
+    --bg: #101412;
+    --panel: #181f1c;
+    --panel-soft: #202823;
+    --text: #f4f0e8;
+    --muted: #b9c0b6;
+    --line: #38433c;
+    --accent: #d7b56d;
+    --accent-strong: #f1d27e;
+    --link: #8fc7b5;
+    --max-width: 1120px;
+    --page-gutter: 32px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: var(--bg);
+    color: var(--text);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.site-header,
+.site-nav,
+.site-main,
+.site-footer {
+    width: min(100% - var(--page-gutter), var(--max-width));
+    margin: 0 auto;
+}
+
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 0 14px;
+}
+
+.site-logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+}
+
+.site-logo__mark {
+    display: grid;
+    width: 36px;
+    height: 36px;
+    place-items: center;
+    border: 1px solid var(--accent);
+    color: var(--accent-strong);
+}
+
+.site-logo__text {
+    font-size: 1.08rem;
+}
+
+.site-nav {
+    display: flex;
+    gap: 8px;
+    padding: 10px 0 22px;
+    border-bottom: 1px solid var(--line);
+    overflow-x: auto;
+    scrollbar-width: thin;
+    -webkit-overflow-scrolling: touch;
+}
+
+.site-nav a {
+    flex: 0 0 auto;
+    min-height: 44px;
+    padding: 10px 14px;
+    color: var(--muted);
+    border: 1px solid transparent;
+    border-radius: 6px;
+    white-space: nowrap;
+}
+
+.site-nav a:hover,
+.site-nav a[aria-current] {
+    color: var(--text);
+    border-color: var(--line);
+    background: var(--panel);
+}
+
+.site-main {
+    padding: 38px 0 58px;
+}
+
+.hero {
+    display: grid;
+    align-items: end;
+    min-height: 430px;
+    padding: 56px;
+    background:
+        linear-gradient(90deg, rgba(16, 20, 18, 0.94), rgba(16, 20, 18, 0.42)),
+        url("/images/neoaxis-hero.svg") center/cover;
+    border: 1px solid var(--line);
+}
+
+.hero__content {
+    max-width: 680px;
+}
+
+.eyebrow {
+    margin: 0 0 10px;
+    color: var(--accent-strong);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0;
+    text-transform: uppercase;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+}
+
+h1 {
+    margin-bottom: 16px;
+    font-size: 6.5rem;
+    line-height: 0.95;
+}
+
+h2 {
+    margin-bottom: 12px;
+    font-size: 2rem;
+    line-height: 1.15;
+}
+
+h3 {
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+}
+
+.hero__lead {
+    max-width: 580px;
+    color: var(--muted);
+    font-size: 1.15rem;
+}
+
+.hero__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 26px;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding: 10px 16px;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.button--primary {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #17120a;
+}
+
+.button--secondary {
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.section {
+    padding: 52px 0 0;
+}
+
+.section__header {
+    max-width: 620px;
+    margin-bottom: 20px;
+}
+
+.feature-grid,
+.listing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.feature-card,
+.listing-card {
+    min-height: 180px;
+    padding: 22px;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+}
+
+.feature-card:hover,
+.listing-card:hover {
+    border-color: var(--accent);
+}
+
+.feature-card__label,
+.listing-card__label {
+    display: block;
+    margin-bottom: 18px;
+    color: var(--link);
+    font-size: 0.82rem;
+    font-weight: 700;
+}
+
+.feature-card p,
+.listing-card p,
+.episode-meta,
+.site-footer {
+    color: var(--muted);
+}
+
+.page-header {
+    max-width: 760px;
+    padding: 28px 0 20px;
+}
+
+.page-header h1 {
+    font-size: 4.8rem;
+}
+
+.episode-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 300px;
+    gap: 34px;
+    align-items: start;
+}
+
+.episode-body {
+    padding: 30px;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+}
+
+.episode-body p {
+    color: var(--muted);
+}
+
+.episode-sidebar {
+    padding: 22px;
+    background: var(--panel-soft);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+}
+
+.episode-sidebar dl {
+    margin: 0;
+}
+
+.episode-sidebar dt {
+    color: var(--accent-strong);
+    font-weight: 700;
+}
+
+.episode-sidebar dd {
+    margin: 0 0 16px;
+    color: var(--muted);
+}
+
+.site-footer {
+    padding: 28px 0 42px;
+    border-top: 1px solid var(--line);
+}
+
+.site-footer p {
+    margin: 0;
+}
+
+@media (max-width: 780px) {
+    :root {
+        --page-gutter: 24px;
+    }
+
+    .site-header {
+        padding: 18px 0 10px;
+    }
+
+    .site-logo__mark {
+        width: 34px;
+        height: 34px;
+    }
+
+    .site-nav {
+        gap: 6px;
+        width: 100%;
+        padding: 8px 12px 14px;
+        border-top: 1px solid var(--line);
+        border-bottom: 1px solid var(--line);
+    }
+
+    .site-nav a {
+        min-height: 42px;
+        padding: 9px 13px;
+        font-size: 0.95rem;
+    }
+
+    .site-main {
+        padding: 24px 0 42px;
+    }
+
+    .hero {
+        min-height: 360px;
+        padding: 32px 22px;
+        background-position: 62% center;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 1.65rem;
+    }
+
+    .page-header {
+        padding: 18px 0 18px;
+    }
+
+    .page-header h1 {
+        font-size: 3.25rem;
+    }
+
+    .hero__lead {
+        font-size: 1.05rem;
+    }
+
+    .hero__actions {
+        margin-top: 22px;
+    }
+
+    .button {
+        min-height: 46px;
+        padding: 11px 16px;
+    }
+
+    .feature-grid,
+    .listing-grid,
+    .episode-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-card,
+    .listing-card {
+        min-height: 150px;
+        padding: 20px;
+    }
+
+    .episode-body,
+    .episode-sidebar {
+        padding: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+        --page-gutter: 18px;
+    }
+
+    body {
+        line-height: 1.55;
+    }
+
+    .site-header {
+        padding-top: calc(14px + env(safe-area-inset-top));
+    }
+
+    .site-logo__text {
+        font-size: 1rem;
+    }
+
+    .site-nav {
+        padding-left: 9px;
+        padding-right: 9px;
+    }
+
+    .site-nav a {
+        font-size: 0.92rem;
+    }
+
+    .site-main {
+        padding-top: 18px;
+    }
+
+    .hero {
+        min-height: calc(100svh - 156px);
+        padding: 26px 18px;
+        background:
+            linear-gradient(0deg, rgba(16, 20, 18, 0.96), rgba(16, 20, 18, 0.48)),
+            url("/images/neoaxis-hero.svg") 66% center/cover;
+    }
+
+    .eyebrow {
+        font-size: 0.72rem;
+    }
+
+    h1 {
+        font-size: 3.15rem;
+        line-height: 1;
+    }
+
+    h2 {
+        font-size: 1.42rem;
+    }
+
+    h3 {
+        font-size: 1.08rem;
+    }
+
+    .hero__lead {
+        font-size: 1rem;
+    }
+
+    .hero__actions {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .section {
+        padding-top: 36px;
+    }
+
+    .section__header {
+        margin-bottom: 16px;
+    }
+
+    .feature-grid,
+    .listing-grid {
+        gap: 10px;
+    }
+
+    .feature-card,
+    .listing-card {
+        min-height: 132px;
+        padding: 18px;
+    }
+
+    .feature-card__label,
+    .listing-card__label {
+        margin-bottom: 12px;
+    }
+
+    .page-header h1 {
+        font-size: 2.55rem;
+        line-height: 1.04;
+    }
+
+    .episode-layout {
+        gap: 14px;
+    }
+
+    .episode-body,
+    .episode-sidebar {
+        padding: 18px;
+    }
+
+    .episode-sidebar dd {
+        overflow-wrap: anywhere;
+    }
+
+    .site-footer {
+        padding: 22px 0 calc(30px + env(safe-area-inset-bottom));
+    }
+}
+
+@media (max-width: 360px) {
+    h1 {
+        font-size: 2.65rem;
+    }
+
+    .page-header h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero {
+        padding: 22px 16px;
+    }
+}

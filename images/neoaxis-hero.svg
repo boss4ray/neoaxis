@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="NeoAxis abstract story universe background">
+  <rect width="1600" height="900" fill="#111613"/>
+  <path d="M0 642c197-92 369-131 517-117 191 18 295 118 476 121 174 3 311-86 607-231v485H0Z" fill="#1c2b25"/>
+  <path d="M0 740c255-76 443-93 563-51 155 54 234 147 445 129 174-15 306-92 592-180v262H0Z" fill="#243830"/>
+  <circle cx="1210" cy="230" r="112" fill="#d7b56d" opacity=".9"/>
+  <path d="M1003 454 1174 98l161 356Z" fill="#263e35"/>
+  <path d="M287 639 506 214l210 425Z" fill="#1f312a"/>
+  <path d="M746 628 907 327l151 301Z" fill="#17251f"/>
+  <path d="M0 901h1600" stroke="#d7b56d" stroke-width="7" opacity=".5"/>
+</svg>

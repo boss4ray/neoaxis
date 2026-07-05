@@ -2,13 +2,58 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>NeoAxis</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeoAxis | Official Story Universe</title>
+    <meta name="description" content="NeoAxis official site for episodes, music, characters, universe lore, and story updates.">
+    <link rel="canonical" href="https://neoaxis.kr/">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
+    <div data-include="/layout/header.html"></div>
+    <div data-include="/layout/menu.html"></div>
 
-<h1>NeoAxis</h1>
+    <main class="site-main">
+        <section class="hero">
+            <div class="hero__content">
+                <p class="eyebrow">Official Story Universe</p>
+                <h1>NeoAxis</h1>
+                <p class="hero__lead">Stories, music, characters, and episodes from the NeoAxis universe.</p>
+                <div class="hero__actions">
+                    <a class="button button--primary" href="/episodes/">Episodes</a>
+                    <a class="button button--secondary" href="/music/">Music</a>
+                </div>
+            </div>
+        </section>
 
-<p>Hello World!</p>
+        <section class="section">
+            <div class="section__header">
+                <p class="eyebrow">Start Here</p>
+                <h2>Explore NeoAxis</h2>
+            </div>
 
+            <div class="feature-grid">
+                <a class="feature-card" href="/episodes/001.html">
+                    <span class="feature-card__label">Episode 001</span>
+                    <h3>The Beginning</h3>
+                    <p>Open the first indexed story page.</p>
+                </a>
+                <a class="feature-card" href="/music/jamie-axis.html">
+                    <span class="feature-card__label">Music</span>
+                    <h3>Jamie Axis</h3>
+                    <p>Character music and related releases.</p>
+                </a>
+                <a class="feature-card" href="/universe/characters.html">
+                    <span class="feature-card__label">Universe</span>
+                    <h3>Characters</h3>
+                    <p>Follow the people and powers shaping the story.</p>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <div data-include="/layout/footer.html"></div>
+
+    <script src="/js/include.js"></script>
+    <script src="/js/common.js"></script>
 </body>
 </html>
