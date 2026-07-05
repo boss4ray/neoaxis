@@ -4,27 +4,45 @@
         <loc>https://neoaxis.kr/</loc>
     </url>
     <url>
-        <loc>https://neoaxis.kr/episodes/</loc>
+        <loc>https://neoaxis.kr/about/</loc>
     </url>
     <url>
-        <loc>https://neoaxis.kr/episodes/001.html</loc>
+        <loc>https://neoaxis.kr/works/</loc>
     </url>
     <url>
-        <loc>https://neoaxis.kr/episodes/002.html</loc>
+        <loc>https://neoaxis.kr/works/love-river/</loc>
+    </url>
+    <url>
+        <loc>https://neoaxis.kr/works/love-river/story/chapter-001.html</loc>
+    </url>
+    <url>
+        <loc>https://neoaxis.kr/works/love-river/story/chapter-002.html</loc>
+    </url>
+    <url>
+        <loc>https://neoaxis.kr/works/love-river/music/</loc>
+    </url>
+    <url>
+        <loc>https://neoaxis.kr/works/love-river/music/never-knew.html</loc>
+    </url>
+    <url>
+        <loc>https://neoaxis.kr/works/love-river/gallery/</loc>
+    </url>
+    <url>
+        <loc>https://neoaxis.kr/works/admiral-yi/</loc>
+    </url>
+    <url>
+        <loc>https://neoaxis.kr/works/reshi/</loc>
     </url>
     <url>
         <loc>https://neoaxis.kr/music/</loc>
     </url>
     <url>
-        <loc>https://neoaxis.kr/music/jamie-axis.html</loc>
+        <loc>https://neoaxis.kr/music/jamie-axis/</loc>
     </url>
     <url>
-        <loc>https://neoaxis.kr/music/james-axis.html</loc>
+        <loc>https://neoaxis.kr/music/james-axis/</loc>
     </url>
     <url>
-        <loc>https://neoaxis.kr/universe/</loc>
-    </url>
-    <url>
-        <loc>https://neoaxis.kr/universe/characters.html</loc>
+        <loc>https://neoaxis.kr/music/gloomy-nocturne/</loc>
     </url>
 </urlset>
